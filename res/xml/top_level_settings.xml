@@ -59,6 +59,15 @@
         android:summary="@string/app_and_notification_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_apps"/>
 
+    <Preference
+        android:fragment="org.pixoid.pixoidsettings.Pixoid"
+        android:icon="@drawable/ic_dashboard_pixoid"
+        android:key="top_level_pixoid_settings"
+        android:order="-125"
+        android:title="@string/pixoid_settings_title"
+        android:summary="@string/pixoid_settings_summary"
+        settings:controller="org.pixoid.pixoidsettings.TopLevelPixoidPreferenceController" />
+
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.notification.ConfigureNotificationSettings"
         android:icon="@drawable/ic_notifications"

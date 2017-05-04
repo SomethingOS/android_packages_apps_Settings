@@ -1,0 +1,2 @@
+# Pixoid
+-keep class org.pixoid.pixoidsettings.**
