@@ -75,11 +75,16 @@ android_library {
         "btadva_settings_java_defaults",
     ],
 
-    srcs: ["src/**/*.java", "src/**/*.kt"],
+    srcs: ["src/**/*.java", "src/**/*.kt",
+       "PixoidSettings/src/**/*.java"],
+
+    aaptflags: ["--extra-packages org.pixoid.pixoidsettings"],
+
     resource_dirs: [
         "res",
         "res-export", // for external usage
         "res-product",
+        "PixoidSettings/res",
     ],
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
@@ -136,6 +141,9 @@ android_library {
         "telephony-ext",
         "extphonelib",
     ],
+    optimize: {
+        proguard_flags_files: ["proguard-core.flags"],
+    },
 }
 
 platform_compat_config {
