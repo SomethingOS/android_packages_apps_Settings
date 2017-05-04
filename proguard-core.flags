@@ -1,0 +1,2 @@
+# Something
+-keep class org.somethingos.somethingsettings.**

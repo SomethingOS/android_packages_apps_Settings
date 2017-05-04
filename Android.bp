@@ -57,7 +57,9 @@ android_library {
     srcs: [
         "src/**/*.java",
         "src/**/*.kt",
+        "SomethingSettings/src/**/*.java",
     ],
+    aaptflags: ["--extra-packages org.somethingos.somethingsettings"],
     exclude_srcs: [
         "src/com/android/settings/biometrics/fingerprint2/lib/**/*.kt",
     ],
@@ -66,6 +68,7 @@ android_library {
         "res",
         "res-export", // for external usage
         "res-product",
+        "SomethingSettings/res",
     ],
     static_libs: [
         // External dependencies
@@ -130,6 +133,9 @@ android_library {
         "telephony-ext",
         "extphonelib",
     ],
+    optimize: {
+        proguard_flags_files: ["proguard-core.flags"],
+    },
 }
 
 platform_compat_config {
