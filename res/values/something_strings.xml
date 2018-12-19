@@ -26,4 +26,8 @@
      <string name="app_volume">App volume</string>
      <string name="app_volume_title">Per-app volume control</string>
      <string name="app_volume_summary">Allow to set different volume levels for each app</string>
+
+    <!-- Volume panel to left -->
+    <string name="volume_panel_on_left_title">Show volume panel on left</string>
+    <string name="volume_panel_on_left_summary">Display volume panel on the left side of the screen</string>
 </resources>
