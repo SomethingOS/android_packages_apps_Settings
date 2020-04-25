@@ -19,6 +19,9 @@ package com.android.settings.core.gateway;
 import co.aospa.settings.display.DcDimmingSettings;
 import co.aospa.settings.display.RefreshRateSettings;
 
+import org.somethingos.somethingsettings.fragments.ui.StatusBarSettings;
+import org.somethingos.somethingsettings.fragments.ui.NetworkTrafficSettings;
+
 import com.android.settings.AllInOneTetherSettings;
 import com.android.settings.DisplaySettings;
 import com.android.settings.IccLockSettings;
@@ -352,6 +355,8 @@ public class SettingsGateway {
             NightDisplaySettings.class.getName(),
             RefreshRateSettings.class.getName(),
             DcDimmingSettings.class.getName(),
+            StatusBarSettings.class.getName(),
+            NetworkTrafficSettings.class.getName(),
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
             StorageDashboardFragment.class.getName(),
