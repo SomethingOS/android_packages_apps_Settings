@@ -261,4 +261,12 @@
     <!-- Placeholder -->
     <string name="sim_placeholder_title" translatable="false">SIM</string>
 
+     <!-- Back gesture height -->
+    <string name="back_height_category">Back gesture height</string>
+    <string name="back_height_low_label">Full</string>
+    <string name="back_height_high_label">Bottom</string>
+    <string name="back_options_dialog_title">Options</string>
+    <string name="back_height_title">Back height</string>
+    <string name="back_height_message">Amount of screen height used as a touchable region for back gesture</string>
+
 </resources>
