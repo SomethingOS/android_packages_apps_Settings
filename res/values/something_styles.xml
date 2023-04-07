@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022-2023 AOSP
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Text Styles -->
+    <style name="somethingTextPrimary">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+    </style>
+
+    <style name="somethingTextPrimaryMedium" parent="somethingTextPrimary">
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
+    </style>
+
+    <style name="somethingTextSecondary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <!-- Dashboard -->
+    <style name="somethingDashboardPreferenceSingle" parent="somethingPreferenceSingle">
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+    <style name="somethingDashboardPreferenceTop" parent="somethingPreferenceTop">
+        <item name="android:layout_marginTop">@dimen/something_pref_horizontal_padding</item>
+    </style>
+
+    <style name="somethingDashboardPreferenceBottom" parent="somethingPreferenceBottom">
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <!-- General -->
+    <style name="somethingPreferenceSingle" parent="somethingPreferenceBase">
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/something_preference_background_single</item>
+    </style>
+
+    <style name="somethingPreferenceBase">
+        <item name="android:layout_marginStart">@dimen/something_pref_horizontal_padding</item>
+        <item name="android:layout_marginEnd">@dimen/something_pref_horizontal_padding</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="somethingPreferenceTop" parent="somethingPreferenceBase">
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:background">@drawable/something_preference_background_top</item>
+    </style>
+
+    <style name="somethingPreferenceMiddle" parent="somethingPreferenceBase">
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:background">@drawable/something_preference_background_middle</item>
+    </style>
+
+    <style name="somethingPreferenceBottom" parent="somethingPreferenceBase">
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/something_preference_background_bottom</item>
+    </style>
+
+    <style name="somethingDashboardPreferenceSingleAccent">
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@drawable/something_preference_background_single_accent</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+</resources>
