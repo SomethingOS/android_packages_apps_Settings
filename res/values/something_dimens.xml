@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <dimen name="something_radius">28dp</dimen>
+     <dimen name="something_radius_merge">5dp</dimen>
+     <dimen name="something_pref_horizontal_padding">16dp</dimen>
+     <dimen name="something_pref_horizontal_padding-negative">-16dp</dimen>
+</resources>

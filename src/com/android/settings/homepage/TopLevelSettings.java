@@ -22,6 +22,7 @@ import static com.android.settingslib.search.SearchIndexable.MOBILE;
 import android.app.ActivityManager;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -71,6 +72,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     private boolean mScrollNeeded = true;
     private boolean mFirstStarted = true;
     private ActivityEmbeddingController mActivityEmbeddingController;
+    private boolean gAppsExists;
 
     public TopLevelSettings() {
         final Bundle args = new Bundle();
@@ -104,6 +106,8 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
+        // Check if Google Apps exist and set the gAppsExists flag accordingly
+        gAppsExists = checkIfGoogleAppsExist(context);
         HighlightableMenu.fromXml(context, getPreferenceScreenResId());
         use(SupportPreferenceController.class).setActivity(getActivity());
     }
@@ -199,6 +203,18 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         final ActivityManager.RunningTaskInfo taskInfo = getSystemService(ActivityManager.class)
                 .getRunningTasks(1).get(0);
         return taskInfo.numActivities == 1;
+    }
+
+    private boolean checkIfGoogleAppsExist(Context context) {
+        // Perform the necessary check to determine if Google Apps exist
+        // For example, you might use PackageManager to check for the existence of a Google app package
+        PackageManager packageManager = context.getPackageManager();
+        try {
+            packageManager.getPackageInfo("com.google.android.gsf", 0);
+            return true; // Google Apps exist
+        } catch (PackageManager.NameNotFoundException e) {
+            return false; // Google Apps do not exist
+        }
     }
 
     @Override
