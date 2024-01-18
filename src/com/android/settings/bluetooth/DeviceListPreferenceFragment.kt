@@ -78,6 +78,7 @@ abstract class DeviceListPreferenceFragment(restrictedKey: String?) :
     @VisibleForTesting
     var mDeviceListGroup: PreferenceGroup? = null
 
+    @JvmField
     @VisibleForTesting
     val devicePreferenceMap =
         ConcurrentHashMap<CachedBluetoothDevice, BluetoothDevicePreference>()
@@ -233,7 +234,7 @@ abstract class DeviceListPreferenceFragment(restrictedKey: String?) :
     }
 
     @VisibleForTesting
-    fun updateFooterPreference(myDevicePreference: Preference) {
+    open fun updateFooterPreference(myDevicePreference: Preference) {
         val bidiFormatter = BidiFormatter.getInstance()
         myDevicePreference.title = getString(
             R.string.bluetooth_footer_mac_message,
@@ -257,7 +258,7 @@ abstract class DeviceListPreferenceFragment(restrictedKey: String?) :
     }
 
     @VisibleForTesting
-    fun disableScanning() {
+    open fun disableScanning() {
         if (mScanEnabled) {
             stopScanning()
             mScanEnabled = false
