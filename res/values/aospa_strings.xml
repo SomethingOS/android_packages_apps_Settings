@@ -16,7 +16,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Paranoid Android version -->
-    <string name="aospa_version">Paranoid Android version</string>
+    <string name="aospa_version">Pixoid Android version</string>
 
     <!-- DC Dimming -->
     <string name="dc_dimming_title">DC Dimming</string>
