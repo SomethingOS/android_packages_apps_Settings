@@ -21,6 +21,11 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="about_illustration"
+        settings:lottie_rawRes="@raw/about_illustration"
+        android:order="-1001" />
+
     <com.android.settingslib.widget.LayoutPreference
         android:key="my_device_info_header"
         android:order="0"
