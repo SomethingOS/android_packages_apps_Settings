@@ -20,6 +20,11 @@
     android:key="system_dashboard_screen"
     android:title="@string/header_category_system">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="system_illustration"
+        settings:lottie_rawRes="@raw/system_illustration"
+        android:order="-1001" />
+
     <Preference
         android:key="language_input_settings"
         android:title="@string/language_settings"
