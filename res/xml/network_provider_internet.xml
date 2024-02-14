@@ -20,6 +20,11 @@
     android:key="network_provider_and_internet_screen"
     android:title="@string/network_dashboard_title">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="network_illustration"
+        settings:lottie_rawRes="@raw/network_illustration"
+        android:order="-1001" />
+
     <com.android.settingslib.RestrictedPreference
         android:fragment="com.android.settings.network.NetworkProviderSettings"
         android:key="internet_settings"
