@@ -1,2 +1,2 @@
-# Pixoid
--keep class org.pixoid.pixoidsettings.**
+# Something
+-keep class org.somethingos.somethingsettings.**

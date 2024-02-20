@@ -16,8 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Pixoid -->
-    <string name="pixoid_settings_title">Pixoid</string>
-    <string name="pixoid_settings_summary">Pixoid Settings</string>
+    <!-- SomethingOS -->
+    <string name="something_settings_title">Something</string>
+    <string name="something_settings_summary">Something Settings</string>
+
+    <string name="Pixoid">Play Integrity</string>
 
 </resources>

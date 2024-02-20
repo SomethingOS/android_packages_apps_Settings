@@ -76,15 +76,15 @@ android_library {
     ],
 
     srcs: ["src/**/*.java", "src/**/*.kt",
-       "PixoidSettings/src/**/*.java"],
+       "SomethingSettings/src/**/*.java"],
 
-    aaptflags: ["--extra-packages org.pixoid.pixoidsettings"],
+    aaptflags: ["--extra-packages org.somethingos.somethingsettings"],
 
     resource_dirs: [
         "res",
         "res-export", // for external usage
         "res-product",
-        "PixoidSettings/res",
+        "SomethingSettings/res",
     ],
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
