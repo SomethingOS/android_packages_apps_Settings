@@ -78,6 +78,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear -->
     <uses-permission android:name="android.permission.READ_USER_DICTIONARY"/>
     <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY"/>
     <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
     <uses-permission android:name="android.permission.BATTERY_STATS"/>
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
@@ -5092,14 +5093,14 @@ SPDX-License-Identifier: BSD-3-Clause-Clear -->
             </intent-filter>
         </receiver>
 
-        <!-- Pixoid -->
-        <activity android:name="Settings$PixoidSettingsActivity"
-                  android:label="@string/pixoid_settings_title"
-                  android:icon="@drawable/ic_dashboard_pixoid"
+        <!-- SomethingOS -->
+        <activity android:name="Settings$SomethingSettingsActivity"
+                  android:label="@string/something_settings_title"
+                  android:icon="@drawable/ic_dashboard_something"
                   android:exported="true"
                   android:taskAffinity="com.android.settings">
             <intent-filter android:priority="1">
-                <action android:name="org.pixoid.pixoidsettings.Pixoid" />
+                <action android:name="org.somethingos.somethingsettings.Something" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
@@ -5114,11 +5115,11 @@ SPDX-License-Identifier: BSD-3-Clause-Clear -->
             <meta-data android:name="com.android.settings.order"
                        android:value="-1"/>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="org.pixoid.pixoidsettings.Pixoid" />
+                       android:value="org.somethingos.somethingsettings.Something" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                        android:value="true" />
             <meta-data android:name="com.android.settings.summary"
-                       android:resource="@string/pixoid_settings_summary"/>
+                       android:resource="@string/something_settings_summary"/>
         </activity>
 
         <!-- This is the longest AndroidManifest.xml ever. -->

@@ -51,7 +51,7 @@ import com.android.settings.security.SecuritySettings;
 import com.android.settings.system.SystemDashboardFragment;
 import com.android.settingslib.drawer.CategoryKey;
 
-import org.pixoid.pixoidsettings.Pixoid;
+import org.somethingos.somethingsettings.Something;
 
 import java.util.Map;
 
@@ -137,7 +137,7 @@ public class DashboardFragmentRegistry {
                 CategoryKey.CATEGORY_SPECIAL_APP_ACCESS);
         PARENT_TO_CATEGORY_KEY_MAP.put(MoreSecurityPrivacyFragment.class.getName(),
                 CategoryKey.CATEGORY_MORE_SECURITY_PRIVACY_SETTINGS);
-        PARENT_TO_CATEGORY_KEY_MAP.put(Pixoid.class.getName(),
+        PARENT_TO_CATEGORY_KEY_MAP.put(Something.class.getName(),
                 CategoryKey.CATEGORY_SYSTEM_DEVELOPMENT);
 
         CATEGORY_KEY_TO_PARENT_MAP = new ArrayMap<>(PARENT_TO_CATEGORY_KEY_MAP.size());
