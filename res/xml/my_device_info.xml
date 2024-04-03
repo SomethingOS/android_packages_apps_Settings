@@ -56,6 +56,14 @@
             android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
             settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
 
+        <!-- Paranoid Android version -->
+        <Preference
+        android:key="somethingos_version"
+            android:order="4"
+            android:title="@string/somethingos_version"
+            android:summary="@string/summary_placeholder"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.SomethingOSVersionPreferenceController"/>
+
         <!-- Account name -->
         <Preference
         android:key="branded_account"
