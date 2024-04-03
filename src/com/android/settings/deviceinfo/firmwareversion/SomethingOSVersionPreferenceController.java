@@ -22,13 +22,13 @@ import android.os.SystemProperties;
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
-public class ParanoidAndroidVersionPreferenceController extends BasePreferenceController {
+public class SomethingOSVersionPreferenceController extends BasePreferenceController {
 
-    private static final String AOSPA_DISPLAY_VERSION_PROP = "ro.aospa.version";
+    private static final String SOMETHINGOS_DISPLAY_VERSION_PROP = "ro.somethingos.version";
 
     private final Context mContext;
 
-    public ParanoidAndroidVersionPreferenceController(Context context, String key) {
+    public SomethingOSVersionPreferenceController(Context context, String key) {
         super(context, key);
         mContext = context;
     }
@@ -40,7 +40,7 @@ public class ParanoidAndroidVersionPreferenceController extends BasePreferenceCo
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(AOSPA_DISPLAY_VERSION_PROP,
+        return SystemProperties.get(SOMETHINGOS_DISPLAY_VERSION_PROP,
                 mContext.getResources().getString(R.string.device_info_default));
     }
 }
