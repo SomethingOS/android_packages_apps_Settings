@@ -62,66 +62,6 @@
         settings:controller="com.android.settings.connecteddevice.GroupConnectedBluetoothDevicesController"
         android:layout="@layout/preference_category_no_label"/>
 
-    <com.android.settings.widget.GroupPreferenceCategory
-         android:key="group_one"
-         android:layout="@layout/preference_category_no_label"
-         settings:allowDividerAbove="true"
-         settings:allowDividerBelow="true"/>
-
-     <com.android.settings.widget.GroupPreferenceCategory
-         android:key="group_two"
-         android:layout="@layout/preference_category_no_label"
-         settings:allowDividerAbove="true"
-         settings:allowDividerBelow="true"/>
-
-     <com.android.settings.widget.GroupPreferenceCategory
-         android:key="group_three"
-         android:layout="@layout/preference_category_no_label"
-         settings:allowDividerAbove="true"
-         settings:allowDividerBelow="true"/>
-
-     <com.android.settings.widget.GroupPreferenceCategory
-         android:key="group_four"
-         android:layout="@layout/preference_category_no_label"
-         settings:allowDividerAbove="true"
-         settings:allowDividerBelow="true"/>
-
-     <com.android.settings.widget.GroupPreferenceCategory
-         android:key="group_five"
-         android:layout="@layout/preference_category_no_label"
-         settings:allowDividerAbove="true"
-         settings:allowDividerBelow="true"/>
-
-    <com.android.settings.widget.GroupPreferenceCategory
-         android:key="group_six"
-         android:layout="@layout/preference_category_no_label"
-         settings:allowDividerAbove="true"
-         settings:allowDividerBelow="true"/>
-
-    <com.android.settings.widget.GroupPreferenceCategory
-         android:key="group_seven"
-         android:layout="@layout/preference_category_no_label"
-         settings:allowDividerAbove="true"
-         settings:allowDividerBelow="true"/>
-
-    <com.android.settings.widget.GroupPreferenceCategory
-         android:key="group_eight"
-         android:layout="@layout/preference_category_no_label"
-         settings:allowDividerAbove="true"
-         settings:allowDividerBelow="true"/>
-
-    <com.android.settings.widget.GroupPreferenceCategory
-         android:key="group_nine"
-         android:layout="@layout/preference_category_no_label"
-         settings:allowDividerAbove="true"
-         settings:allowDividerBelow="true"/>
-
-    <com.android.settings.widget.GroupPreferenceCategory
-         android:key="group_remaining"
-         android:layout="@layout/preference_category_no_label"
-         settings:allowDividerAbove="true"
-         settings:allowDividerBelow="true"/>
-
     <PreferenceCategory
         android:key="previously_connected_devices"
         android:title="@string/connected_device_saved_title"
