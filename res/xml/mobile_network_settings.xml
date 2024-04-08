@@ -30,7 +30,7 @@
 
     <PreferenceCategory
         android:key="enabled_state_container"
-        android:title="@string/summary_placeholder"
+        android:title="@string/sim_placeholder_title"
         settings:controller="com.android.settings.network.telephony.DisabledSubscriptionController"
         android:layout="@layout/preference_category_no_label">
 

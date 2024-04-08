@@ -21,7 +21,7 @@
 
     <PreferenceCategory
         android:key="provider_model_sim_category"
-        android:title="@string/summary_placeholder"
+        android:title="@string/sim_placeholder_title"
         android:layout="@layout/preference_category_no_label"
         android:order="20"
         settings:controller="com.android.settings.network.NetworkProviderSimsCategoryController"/>
