@@ -226,14 +226,11 @@ public class WifiTetherApBandPreferenceController extends WifiTetherBasePreferen
             return true;
         } else {
              try {
-                 if (mAllowedBands.get(WIFI_BAND_5_GHZ_WITH_DFS) != null
-                     && mAllowedBands.get(WIFI_BAND_5_GHZ_WITH_DFS)) {
-                         return true;
-                 } else {
-                         mAllowedBands.put(WIFI_BAND_5_GHZ_WITH_DFS,
-                         mWifiManager.getAllowedChannels(WIFI_BAND_5_GHZ_WITH_DFS, OP_MODE_SAP).size() > 0);
-                         return true;
+                 if (mAllowedBands.get(WIFI_BAND_5_GHZ_WITH_DFS) == null){
+                     mAllowedBands.put(WIFI_BAND_5_GHZ_WITH_DFS,
+                     mWifiManager.getAllowedChannels(WIFI_BAND_5_GHZ_WITH_DFS, OP_MODE_SAP).size() > 0);
                  }
+                 return mAllowedBands.get(WIFI_BAND_5_GHZ_WITH_DFS);
              } catch (Exception e) {
                  Log.e(TAG, "5Ghz Band Not Supported");
                  if (mVerboseLoggingEnabled) {
@@ -253,14 +250,11 @@ public class WifiTetherApBandPreferenceController extends WifiTetherBasePreferen
         }
         else {
              try {
-                 if (mAllowedBands.get(WIFI_BAND_6_GHZ) != null
-                     && mAllowedBands.get(WIFI_BAND_6_GHZ)) {
-                         return true;
-                 } else {
-                         mAllowedBands.put(WIFI_BAND_6_GHZ,
-                         mWifiManager.getAllowedChannels(WIFI_BAND_6_GHZ, OP_MODE_SAP).size() > 0);
-                         return true;
+                 if (mAllowedBands.get(WIFI_BAND_6_GHZ) == null) {
+                     mAllowedBands.put(WIFI_BAND_6_GHZ,
+                     mWifiManager.getAllowedChannels(WIFI_BAND_6_GHZ, OP_MODE_SAP).size() > 0);
                  }
+                 return mAllowedBands.get(WIFI_BAND_6_GHZ);
              } catch (Exception e) {
                  Log.e(TAG, "6Ghz Band Not Supported");
                  if (mVerboseLoggingEnabled) {
