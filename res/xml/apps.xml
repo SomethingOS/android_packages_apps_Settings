@@ -23,6 +23,7 @@
 
     <com.android.settingslib.widget.IllustrationPreference
         android:key="app_illustration"
+        android:selectable="false"
         settings:lottie_rawRes="@raw/app_illustration"
         android:order="-1001" />
 
