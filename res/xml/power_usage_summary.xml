@@ -23,6 +23,7 @@
 
     <com.android.settingslib.widget.IllustrationPreference
         android:key="battery_illustration"
+        android:selectable="false"
         settings:lottie_rawRes="@raw/battery_illustration"
         android:order="-999" />
 

@@ -25,6 +25,7 @@
     <com.android.settingslib.widget.IllustrationPreference
         android:key="accessibility_illustration"
         settings:lottie_rawRes="@raw/accessibility_illustration"
+        android:selectable="false"
         android:order="-1001" />
 
     <PreferenceCategory
