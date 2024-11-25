@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright 2016-2023 Paranoid Android
+<!-- Copyright 2024 - SomethingOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 
     <!-- SomethingOS -->
     <string name="something_settings_title">Something</string>
-    <string name="aospa_version">SomethingOS</string>
+    <string name="somethingos_version">SomethingOS</string>
     <string name="something_settings_summary">Try Something new !</string>
 
     <string name="Pixoid">Play Integrity</string>
