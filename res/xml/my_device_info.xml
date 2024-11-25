@@ -47,6 +47,14 @@
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
             settings:enableCopying="true"/>
+        
+        <!-- SomethingOS Version -->
+        <Preference
+        android:key="somethingos_version"
+            android:order="2"
+            android:title="@string/somethingos_version"
+            android:summary="@string/summary_placeholder"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.SomethingOSVersionPreferenceController"/>
 
         <!-- Android version -->
         <Preference
@@ -60,11 +68,48 @@
         <!-- Account name -->
         <Preference
             android:key="branded_account"
-            android:order="4"
+            android:order="3"
             android:title="@string/my_device_info_account_preference_title"
             android:summary="@string/summary_placeholder"
             settings:enableCopying="true"
             settings:controller="com.android.settings.deviceinfo.BrandedAccountPreferenceController"/>
+
+        <!-- Phone number -->
+        <Preference
+            android:key="phone_number"
+            android:order="4"
+            android:title="@string/status_number"
+            android:summary="@string/summary_placeholder"
+            android:selectable="false"
+            settings:isPreferenceVisible="@bool/config_show_sim_info"
+            settings:controller="com.android.settings.deviceinfo.PhoneNumberPreferenceController"
+            settings:enableCopying="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/my_device_info_legal_category_title">
+
+        <!-- Legal information -->
+        <Preference
+            android:key="legal_container"
+            android:order="15"
+            android:title="@string/legal_information"
+            android:fragment="com.android.settings.LegalSettings"/>
+
+        <!-- Regulatory labels -->
+        <Preference
+            android:key="regulatory_info"
+            android:order="16"
+            android:title="@string/regulatory_labels">
+            <intent android:action="android.settings.SHOW_REGULATORY_INFO"
+                    android:targetPackage="${applicationId}"/>
+        </Preference>
+
+        <!-- Safety & regulatory manual -->
+        <Preference
+            android:key="safety_info"
+            android:order="17"
+            android:title="@string/safety_and_regulatory_info"/>
     </PreferenceCategory>
 
     <PreferenceCategory
