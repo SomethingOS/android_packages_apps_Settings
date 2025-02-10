@@ -21,6 +21,7 @@ import co.aospa.settings.display.RefreshRateSettings;
 
 import org.somethingos.somethingsettings.fragments.ui.StatusBarSettings;
 import org.somethingos.somethingsettings.fragments.ui.NetworkTrafficSettings;
+import org.somethingos.somethingsettings.fragments.ui.PowerMenuActions;
 
 import com.android.settings.AllInOneTetherSettings;
 import com.android.settings.DisplaySettings;
@@ -357,6 +358,7 @@ public class SettingsGateway {
             DcDimmingSettings.class.getName(),
             StatusBarSettings.class.getName(),
             NetworkTrafficSettings.class.getName(),
+            PowerMenuActions.class.getName(),
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
             StorageDashboardFragment.class.getName(),

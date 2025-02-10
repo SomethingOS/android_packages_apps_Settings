@@ -134,6 +134,7 @@ public class Settings extends SettingsActivity {
     public static class DcDimmingSettingsActivity extends SettingsActivity { /* empty */ }
     public static class StatusBarSettingsActivity extends SettingsActivity { /* empty */ }
     public static class NetworkTrafficSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class PowerMenuActionsActivity extends SettingsActivity { /* empty */ }
     public static class MyDeviceInfoActivity extends SettingsActivity { /* empty */ }
     public static class ModuleLicensesActivity extends SettingsActivity { /* empty */ }
     public static class ApplicationSettingsActivity extends SettingsActivity { /* empty */ }
